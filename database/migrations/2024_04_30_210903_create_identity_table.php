@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('identity', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('FirstName');
             $table->string('MiddleName');
             $table->string('SecondName');
@@ -21,6 +20,7 @@ return new class extends Migration
             $table->string('Number');
             $table->string('Direction');
             $table->date('BirthDate');
+            $table->timestamps();
         });
     }
 

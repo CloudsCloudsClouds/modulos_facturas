@@ -7,22 +7,24 @@
 </head>
 <body>
     <h1>Crear identidad</h1>
-    <form method="post" action="">
+    <form method="post" action="{{route('identity.store')}}">
+        @csrf
+        @method('post')
         <div>
             <label>First Name</label>
-            <input type="text" name="First Name" placeholder="Juan"/>
+            <input type="text" name="FirstName" placeholder="Juan"/>
         </div>
         <div>
             <label>Middle Name</label>
-            <input type="text" name="Middle Name" placeholder="Luis"/>
+            <input type="text" name="MiddleName" placeholder="Luis"/>
         </div>
         <div>
             <label>Second Name</label>
-            <input type="text" name="Second Name" placeholder="Cruz"/>
+            <input type="text" name="SecondName" placeholder="Cruz"/>
         </div>
         <div>
             <label>Last Name</label>
-            <input type="text" name="Last Name" placeholder="Montes"/>
+            <input type="text" name="LastName" placeholder="Montes"/>
         </div>
         <div>
             <label>CI</label>
@@ -35,6 +37,10 @@
         <div>
             <label>Direction</label>
             <input type="text" name="Direction" placeholder="Irpavi II Calle B"/>
+        </div>
+        <div>
+            <label>Birth Date</label>
+            <input type="date" name=BirthDate />
         </div>
         <div>
             <input type="submit" value="Submit new content" />

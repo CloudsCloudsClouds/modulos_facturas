@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/identity', [IdentityController::class, 'index'])->name('identity.index');
 Route::get('/identity/create', [IdentityController::class, 'create'])->name('identity.create');
+Route::post('/identity', [IdentityController::class, 'store'])->name('identity.store');

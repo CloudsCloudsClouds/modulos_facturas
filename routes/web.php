@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/identity', [IdentityController::class, 'index'])->name('identities.index');
+Route::get('/identity', [IdentityController::class, 'index'])->name('identity.index');
+Route::get('/identity/create', [IdentityController::class, 'create'])->name('identity.create');

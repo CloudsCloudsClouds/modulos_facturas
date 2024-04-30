@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('FirstName');
             $table->string('MiddleName');
             $table->string('SecondName');
+            $table->string('LastName');
             $table->string('CI');
             $table->string('Number');
             $table->string('Direction');

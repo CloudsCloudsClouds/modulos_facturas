@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\identity;
 use Illuminate\Http\Request;
 
 class IdentityController extends Controller
 {
-    //
+    public function index() {
+        return view('identity.index');
+    }
 }

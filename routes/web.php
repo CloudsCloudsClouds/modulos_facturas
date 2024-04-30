@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/identity', [IdentityController::class, ''])->name('identity.index');
+Route::get('/identity', [IdentityController::class, 'index'])->name('identity.index');

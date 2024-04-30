@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class IdentityController extends Controller
 {
     public function index() {
-        return view('identity.index');
+        return view('identities.index');
     }
 }

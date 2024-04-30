@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Crear identidad</h1>
-    <form>
+    <form method="post" action="">
         <div>
             <label>First Name</label>
             <input type="text" name="First Name" placeholder="Juan"/>
@@ -35,6 +35,9 @@
         <div>
             <label>Direction</label>
             <input type="text" name="Direction" placeholder="Irpavi II Calle B"/>
+        </div>
+        <div>
+            <input type="submit" value="Submit new content" />
         </div>
     </form>
 </body>

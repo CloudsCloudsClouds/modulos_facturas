@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IdentityController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/identity', [IdentityController::class, ''])->name('identity.index');

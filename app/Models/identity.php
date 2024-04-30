@@ -10,6 +10,13 @@ class identity extends Model
     use HasFactory;
 
     protected $fillable = [
-        
+        'FirstName',
+        'MiddleName',
+        'SecondName',
+        'LastName',
+        'CI',
+        'Number',
+        'Direction',
+        'BirthDate'
     ];
 }

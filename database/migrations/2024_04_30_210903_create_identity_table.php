@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('identity', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->name();
-            $table->middle_name();
-            $table->second_name();
-            $table->ci();
-            $table->direction();
-            $table->number();
-            $table->birth_date();
+            $table->string('FirstName');
+            $table->string('MiddleName');
+            $table->string('SecondName');
+            $table->string('CI');
+            $table->string('Number');
+            $table->string('Direction');
+            $table->date('BirthDate');
         });
     }
 
